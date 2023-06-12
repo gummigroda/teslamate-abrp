@@ -11,4 +11,4 @@ COPY teslamate_mqtt2abrp.py .
 RUN adduser -D toor
 USER toor
 
-ENTRYPOINT [ "python", "-u", "./teslamate_mqtt2abrp.py" ]
+ENTRYPOINT [ "python", "-u", "teslamate_mqtt2abrp.py" ]
