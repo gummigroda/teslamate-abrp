@@ -5,10 +5,10 @@ WORKDIR /usr/src/teslamate-abrp
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY teslamate_mqtt2abrp.py .
 
 # Create a non-root user
 RUN adduser -D toor
 USER toor
 
-CMD [ "python", "-u", "./teslamate_mqtt2abrp.py" ]
+ENTRYPOINT [ "python", "-u", "./teslamate_mqtt2abrp.py" ]
