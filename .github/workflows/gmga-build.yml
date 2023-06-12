@@ -1,6 +1,6 @@
 # Build for amd64 and arm64 and publish to DockerHub and GitHub Packages
 
-name: Build and publish Docker image
+name: GMGA - Build and publish Docker image
 
 on:
   release:
